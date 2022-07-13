@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepsiCo India</title>
+
+    <link rel="shortcut icon" href="Pepsi.png" type="image/x-icon">
+<style>
+    body{
+        
+        background-color: rgb(0, 114, 190);
+        
+        
+    }
+    *{
+        
+        margin: 0;
+        padding: 0;
+        font-family: Sofia Pro Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    ul{
+        float: right;
+        margin-right: 4%;
+        position: relative;
+        top: 0;
+    
+        
+        
+    }
+    li{
+        list-style-type: none;
+        float: left;
+        color: white;
+        margin: 2vh;
+        padding: 10px ;
+    
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    li:hover{
+        animation: text_size alternate 0.1s forwards;
+    }
+    @keyframes text_size {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.1);
+        }
+        
+    }
+    .nav_img{
+        position: absolute;
+        top: 2%;
+        margin-left: 4%;
+
+
+    }
+    .nav_img img{
+       height: 50px;
+
+    }
+     .mid_sec{
+        color: white;
+        position: relative;
+        top: 25vh;
+        margin-left: 10%;
+        
+        
+    } 
+    .top_text{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .second_text{
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    .small_text{
+        line-height: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    button{
+        border: 1px solid ;
+        border-radius: 20px;
+        padding: 10px 12px;
+        font-weight: 800;
+        cursor: pointer;
+        margin-top: 30px;
+        
+    }
+    button:hover{
+        animation: button alternate 0.1s forwards;
+    }
+    @keyframes button {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0.95);
+        }
+        
+    }
+    .pepsi_img img{
+        height: 370px;
+        position: absolute;
+       top: -15px;
+        left: 70%;
+    }
+    .pepsi_type{
+        display: flex;
+        
+        justify-content: center;
+    }
+    .pepsi_type img{
+        height: 100px;
+        padding: 20px;
+        margin-top: 300px;
+        cursor: pointer;
+            
+    }
+    .pepsi_type img:hover{
+        animation: can_up 0.2s forwards;
+    }
+    @keyframes can_up {
+        0%{
+            transform: translateY(-px);
+
+        }
+        100%{
+            transform: translateY(-10px);
+        }
+    }
+</style>
+</head>
+<body id="body" bgcolor="blue">
+    <div class="nav">
+        <div class="nav_img">
+            <img src="Pepsi.png" alt="">
+        </div>
+        <ul>
+            
+            <a href="">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>Products</li>
+            </a>
+            <a href="mailto:chakrabortygourab38@gmail.com">
+                <li>Contact Us</li>
+            </a>
+            <a href="">
+                <li>About Us</li>
+            </a>
+        </ul>
+    </div>
+    <div class="mid_sec">
+        <div class="mid_text">
+            <div class="top_text">
+               <pre>THAT'S WHAT</pre>
+            </div>
+            <div class="second_text">
+               <pre>I LIKE</pre>
+            </div>
+            <div class="small_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing hesrgrg<br>
+                Quibusdam quam animi quaerat repellat earum sunt? Ad <br>
+                obcaecati ipsum architecto Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit.
+            </div>
+            <div class="button">
+                <button>VIEW ALL PRODUCTS</button>
+            </div>
+        </div>
+        <div class="pepsi_img">
+            <img src="Pepsi black.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="pepsi_type">
+            <img src="Pepsi blue.png" alt="" id="blue" onclick="blue()">
+            <img src="pepsi white.png" alt="" id="white" onclick="white()">
+            <img src="Pepsi black.png" alt="" id="black" onclick="black()">
+        </div>
+    </div>
+    <script>
+        
+        
+        blue=()=>{
+            let pepsi_type_blue = document.getElementById('blue')
+            let pepsi_bg = document.getElementById('body')
+
+            if (pepsi_bg.style.backgroundColor !='rgb(0, 114, 190)') {
+                pepsi_bg.style.backgroundColor ='rgb(0, 114, 190)'
+                
+            } else {
+                pepsi_bg.style.backgroundColor ='rgb(0, 114, 190)'
+            }
+           
+            
+
+        }
+        function white() {
+            let pepsi_type_white = document.getElementById('white')
+            let pepsi_bg = document.getElementById('body')
+
+            if (pepsi_bg.style.backgroundColor !='rgb(255, 13, 13)') {
+                pepsi_bg.style.backgroundColor ='rgb(255, 13, 13)'
+                
+            } else {
+                pepsi_bg.style.backgroundColor ='rgb(255, 13, 13)'
+            }
+        }
+        
+
+        function black() {
+            let pepsi_type_black = document.getElementById('black')
+            let pepsi_bg = document.getElementById('body')
+
+            if (pepsi_bg.style.backgroundColor !='rgb(14, 9, 9)' ) {
+                pepsi_bg.style.backgroundColor ='rgb(14, 9, 9)'
+                
+            } else {
+                pepsi_bg.style.backgroundColor ='rgb(14, 9, 9)'
+            }
+        }
+
+        // function blue() {
+        //     var blue_pic = document.getElementById('blue');
+        //     if (blue_pic.src.match("Pepsi blue.png")) {
+        //         blue_pic.src = "Pepsi blue.png";
+        //     }
+        //     else {
+        //        blue_pic.src = "Pepsi blue.png";
+        //     }
+        // }
+        
+
+
+        
+
+
+
+        var image = document.getElementById('Pepsi blue.png');
+
+image.addEventListener('click', function(){
+    changeImage();
+});
+
+function changeImage(){
+    image.src = 'Pepsi blue.png';
+}     
+    </script>
+</body>
+</html>
